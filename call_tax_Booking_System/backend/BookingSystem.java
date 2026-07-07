@@ -79,6 +79,7 @@ public class BookingSystem
         selected.setearnings(selected.getearnings()+charges);
         selected.setfreetime(droptime);
         selected.setcurrentspot(c.getdropplace());
+        System.out.println("Taxi can be allocated");
         System.out.println("Taxi - "+selected.gettaxiId() +" is allocated.");
     }
     void printdetails()
