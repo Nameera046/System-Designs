@@ -12,15 +12,15 @@ class Booking
         this.amount=amount;
         this.customer=customer;
     }
-    public int bookingId()
+    public int getbookingId()
     {
         return bookingId;
     }
-    public int droptime()
+    public int getdroptime()
     {
         return droptime;
     }
-    public int amount()
+    public int getamount()
     {
         return amount;
     }

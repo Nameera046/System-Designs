@@ -6,10 +6,12 @@ class Main
         Customer c2=new Customer(2, 'B', 'D',9);
         Customer c3=new Customer(3, 'B', 'C',12);
         
-        BookingSystem bookingSystem=new BookingSystem(4);
+        BookingSystem bookingSystem=new BookingSystem(3);
 
         bookingSystem.bookTaxi(c1);
         bookingSystem.bookTaxi(c2);
         bookingSystem.bookTaxi(c3);
+
+        bookingSystem.printdetails();
     }
 }

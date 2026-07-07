@@ -20,32 +20,44 @@ class Taxi
         int traveltime=Math.abs(pickup-currentspot);
         if(freetime+traveltime<=pickuptime)
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
     public void assignbooking(Booking b)
     {
         bookings.add(b);
     }
-    public int taxiId()
+    public int gettaxiId()
     {
         return taxiId;
     }
-    public int freetime()
+    public int getfreetime()
     {
         return freetime;
     }
-    public char currentspot()
+    public char getcurrentspot()
     {
         return currentspot;
     }
-    public int earnings()
+    public int getearnings()
     {
         return earnings;
     }
     public List<Booking> getBookings()
     {
         return bookings;
+    }
+    public void setearnings(int earnings)
+    {
+        this.earnings=earnings;
+    }
+    public void setfreetime(int freetime)
+    {
+        this.freetime=freetime;
+    }
+    public void setcurrentspot(char currentspot)
+    {
+        this.currentspot=currentspot;
     }
 }
