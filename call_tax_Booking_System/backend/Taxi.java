@@ -40,6 +40,7 @@ class Taxi
     {
         return currentspot;
     }
+
     public int getearnings()
     {
         return earnings;
