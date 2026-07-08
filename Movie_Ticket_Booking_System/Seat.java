@@ -1,14 +1,12 @@
 class Seat{
     private int seatNo;
     private char seatType;
-    public int noOfSeats;
     private boolean isBooked;
 
-    Seat(int seatNo, char seatType,int noOfSeats)
+    Seat(int seatNo, char seatType)
     {
         this.seatNo=seatNo;
         this.seatType=seatType;
-        this.noOfSeats=noOfSeats;
         isBooked=false;
     }
 
@@ -19,9 +17,5 @@ class Seat{
     public char getseatType()
     {
         return seatType;
-    }
-    public int getnoOfSeats()
-    {
-        return noOfSeats;
     }
 }
